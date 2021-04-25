@@ -11,9 +11,80 @@
     <script src="src/Patch.js"></script>
 </head>
 <body>
+    	<div id="form_container">
+	
+		<h1><a>Terrazzo Inputs</a></h1>
+		<form id="form_23373" class="appnitro"  method="post" action="">
+					<div class="form_description">
+			<h2>Terrazzo Inputs</h2>
+			<p>Adjust values and submit to generate a new terrazzo.</p>
+		</div>						
+			<ul >
+			
+					<li id="li_1" >
+		<label class="description" for="element_1">Chip Colour 1 </label>
+		<div>
+			<input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value="#477288"/> 
+		</div> 
+		</li>		<li id="li_2" >
+		<label class="description" for="element_2">Chip Colour 2 </label>
+		<div>
+			<input id="element_2" name="element_2" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_3" >
+		<label class="description" for="element_3">Chip Colour 3 </label>
+		<div>
+t			<input id="element_3" name="element_3" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_4" >
+		<label class="description" for="element_4">Chip Colour 4 </label>
+		<div>
+			<input id="element_4" name="element_4" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_5" >
+		<label class="description" for="element_5">Background Colour </label>
+		<div>
+			<input id="element_5" name="element_5" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_6" >
+		<label class="description" for="element_6">Weight 1 </label>
+		<div>
+			<input id="element_6" name="element_6" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_7" >
+		<label class="description" for="element_7">Weight 2 </label>
+		<div>
+			<input id="element_7" name="element_7" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_8" >
+		<label class="description" for="element_8">Weight 3 </label>
+		<div>
+			<input id="element_8" name="element_8" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_9" >
+		<label class="description" for="element_9">Weight 4 </label>
+		<div>
+			<input id="element_9" name="element_9" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_10" >
+		<label class="description" for="element_10">Density </label>
+		<div>
+			<input id="element_10" name="element_10" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>
+			
+					<li class="buttons">
+			    <input type="hidden" name="form_id" value="23373" />
+			    
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+		</li>
+			</ul>
+		</form>	
+    
+    
     <script type="text/javascript">
         const palettes = [
-            { colors: ['#477288', '#bf796d', '#f6c38f', '#7e9a9e', '#cdd1d0'], background: '#f6f6f6' },
+            { colors: ['#477288', '#477288', '#f6c38f', '#7e9a9e', '#cdd1d0'], background: '#f6f6f6' },
             { colors: ['#e2c3a3', '#c36d52', '#435755', '#485158'], background: '#2a2d31' },
             { colors: ['#e0c1bf', '#eef3f5', '#486c73', '#bdc5d1'], background: '#cfdedb' },
             { colors: ['#dddedb', '#9f5b60', '#d9b9c0', '#71989a'], background: '#f1edeb' },
@@ -23,7 +94,7 @@
         const palette = Math.randomElement(palettes);
         const generator = new Generator(innerWidth, innerHeight, palette.colors);
         const renderer = new SvgRenderer(innerWidth, innerHeight);
-        renderer.render(generator.getPatches(), palette.background);
+        //renderer.render(generator.getPatches(), palette.background);
     </script>
 </body>
 </html>
