@@ -14,7 +14,7 @@
     	<div id="form_container">
 	
 		<h1><a>Terrazzo Inputs</a></h1>
-		<form id="form_23373" class="appnitro"  method="post" action="">
+		<form id="form_23373" class="appnitro"  method="post" action="#" onsubmit="return generateTerrazzo()">
 					<div class="form_description">
 			<h2>Terrazzo Inputs</h2>
 			<p>Adjust values and submit to generate a new terrazzo.</p>
@@ -83,6 +83,8 @@
     
     
     <script type="text/javascript">
+	function generateTerrazzo(){    
+	    
         const palettes = [
             { colors: ['#477288', '#477288', '#f6c38f', '#7e9a9e', '#cdd1d0'], background: '#f6f6f6' },
             { colors: ['#e2c3a3', '#c36d52', '#435755', '#485158'], background: '#2a2d31' },
@@ -94,7 +96,8 @@
         const palette = Math.randomElement(palettes);
         const generator = new Generator(innerWidth, innerHeight, palette.colors);
         const renderer = new SvgRenderer(innerWidth, innerHeight);
-        //renderer.render(generator.getPatches(), palette.background);
+        renderer.render(generator.getPatches(), palette.background);
+	}
     </script>
 </body>
 </html>
