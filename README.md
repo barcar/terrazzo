@@ -2,7 +2,7 @@
 
 Terrazzo patern generator. For fun 😊
 
-https://tom32i.github.io/terrazzo/
+https://barcar.github.io/terrazzo/
 
 ![](1.png)
 ![](2.png)
