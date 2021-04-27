@@ -1,6 +1,6 @@
 # Terrazzo
 
-Terrazzo patern generator. For fun 😊
+Terrazzo pattern generator. For fun 😊
 
 https://barcar.github.io/terrazzo/
 
